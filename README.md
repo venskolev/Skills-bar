@@ -1,2 +1,2 @@
 HTML and CSS.
-Skills bar with schaten, without JavaScript.
+Skills bar with shadow, without JavaScript
