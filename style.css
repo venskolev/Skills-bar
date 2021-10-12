@@ -1,4 +1,6 @@
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 
 .container {
   width: auto;
@@ -11,13 +13,11 @@
   position: sticky;
 }
 .skills {
+  height: 2.5rem;
   text-align: left;
-  padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
+  padding: 10px 10px 10px 10px;
   text-shadow: 1px 1px 2px black,
-  0 0 25px rgba(0, 0, 255, 0.63),
+  0 0 25px rgba(187, 255, 0, 0.63),
   0 0 5px rgba(0, 56, 139, 0.74);
   border-radius: 30px;
   margin: -20px 0 -2px;
@@ -26,26 +26,65 @@
   0 0 5px rgb(141, 141, 141);
 }
 .html {
-  width: 50%;
-  background-color: #ff820d;
+  width: 70%;
+  color: #ff820d;
 }
 .css {
-  width: 40%;
-  background-color: #2196F3;
+  width: 50%;
+  color: #2196F3;
 }
 .js {
   width: 15%;
-  background-color: #f4e136;
+  color: #f4e136;
 }
 .php {
   width: 30%;
-  background-color: #808080;
-}
-.photoshop {
-  width: 60%;
-  background-color: #880f0f;
+  color: #808080;
 }
 .edv {
   width: 80%;
+  color: #0059a1;
+}
+.photoshop {
+  width: 60%;
+  color: #880f0f;
+}
+.html,
+.css,
+.php,
+.js,
+.edv,
+.photoshop {
+    transition: background-color 2s;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.html:hover {
+  background-color: #ff820d;
+  color: white;
+  width: 70%;
+}
+.css:hover {
+  background-color: #2196F3;
+  color: white;
+  width: 50%;
+}
+.js:hover {
+  background-color: #f4e136;
+  color: white;
+  width: 15%;
+}
+.php:hover {
+  background-color: #808080;
+  color: white;
+  width: 30%;
+}
+.edv:hover {
   background-color: #0059a1;
+  color: white;
+  width: 80%;
+}
+.photoshop:hover {
+  background-color: #880f0f;
+  color: white;
+  width: 60%;
 }
